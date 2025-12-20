@@ -1,3 +1,4 @@
+# Base style
 BasedOnStyle: LLVM
 
 # Line width
@@ -11,8 +12,9 @@ IndentWidth: 4
 ContinuationIndentWidth: 4
 UseTab: Never
 
-# Vertical Orientation
+# Disallow single-line constructs
 AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
 AllowShortBlocksOnASingleLine: Never
+AllowShortEnumsOnASingleLine: false
