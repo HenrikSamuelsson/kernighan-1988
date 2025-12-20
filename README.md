@@ -1,8 +1,6 @@
 # K&R (2nd ed.) – The C Programming Language
 
-This repository contains my notes, exercises, and small programs created while
-working through *The C Programming Language* (2nd edition) by Kernighan and
-Ritchie.
+This repository contains my notes, exercises, and small programs created while working through *The C Programming Language* (2nd edition) by Kernighan and Ritchie.
 
 ## Structure
 
@@ -22,17 +20,11 @@ Ritchie.
 
 Most examples are intended to be built with a standard C toolchain.
 
-Example (GCC/Clang):
+Example (GCC):
 
-- Build: `cc -Wall -Wextra -Wpedantic -O2 -std=c11 file.c -o file`
-- Run: `./file`
-
-If a folder has its own `Makefile`, prefer:
-
-- `make`
-- `make clean`
+- Build: `gcc -std=c11 -Wall -Wextra -Wpedantic main.c`
+- Run: `./a.exe`
 
 ## References
 
-Kernighan, B. W., & Ritchie, D. M. (1988). *The C programming language* (2nd ed.).
-Prentice Hall.
+Kernighan, B. W., & Ritchie, D. M. (1988). *The C programming language* (2nd ed.). Prentice Hall.
