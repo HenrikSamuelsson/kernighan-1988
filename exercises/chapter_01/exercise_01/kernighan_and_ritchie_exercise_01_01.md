@@ -22,7 +22,7 @@ https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/38460d80dc3b
 
 <https://github.com/HenrikSamuelsson/kernighan-1988/blob/46923bee0f96c26223326544df26b576ef843317/exercises/chapter_01/exercise_01/main.c#L1-L9>
 
-<https://github.com/HenrikSamuelsson/kernighan-1988/blob/head/exercises/chapter_01/exercise_01/main.c#L1-L9>
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/head/exercises/chapter_01/exercise_01/main.c#L1-L9>
 
 ## Answer
 
