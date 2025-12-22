@@ -14,9 +14,9 @@ There is an example program in the book but I implemented my own version of the 
 
 ### Functional Version
 
-<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/15717d7a575c2a5657165b798082dc7385980e97/exercises/chapter_01/exercise_01/main.c#L1-L8>
-
 This version compiles and runs as expected.
+
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/15717d7a575c2a5657165b798082dc7385980e97/exercises/chapter_01/exercise_01/main.c#L1-L8>
 
 ```powershell
 > gcc -std=c11 -Wall -Wextra -Wpedantic main.c
@@ -24,7 +24,31 @@ PS C:\dev\kernighan-and-ritchie-1988\exercises\chapter_01\exercise_01> ./a.exe
 Hello, world!
 ```
 
+### Missing Include
+
+Intentionally left out the line `#include <stdio.h>` to see what error messages this causes when compiling.
+
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/691949fa5bbb2b7926e65889761d723f2462f105/exercises/chapter_01/exercise_01/main_missing_include.c#L1-L7>
+
+```powershell
+> gcc -std=c11 -Wall -Wextra -Wpedantic .\main_missing_include.c 
+.\main_missing_include.c: In function 'main':
+.\main_missing_include.c:5:5: error: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    5 |     printf("Hello, world!\n");
+      |     ^~~~~~
+.\main_missing_include.c:2:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    1 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+    2 |
+.\main_missing_include.c:5:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    5 |     printf("Hello, world!\n");
+      |     ^~~~~~
+.\main_missing_include.c:5:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+```
+
 ### Missing Semicolon
+
+Intentionally left out a semicolon to see what error messages this causes when compiling.
 
 <https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/d217fa057e18fa36969fdc8c02687803b5231fdb/exercises/chapter_01/exercise_01/main_missing_semicolon.c#L1-L8>
 
