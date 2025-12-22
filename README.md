@@ -20,7 +20,7 @@ This repository contains my notes, exercises, and small programs created while w
 
 Most examples are intended to be built with a standard C toolchain.
 
-Example (GCC):
+Example using GCC in Windows PowerShell:
 
 - Build: `gcc -std=c11 -Wall -Wextra -Wpedantic .\main.c`
 - Run: `.\a.exe`
