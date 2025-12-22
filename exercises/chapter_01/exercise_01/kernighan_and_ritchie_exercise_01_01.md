@@ -28,7 +28,7 @@ Hello, world!
 
 Intentionally left out the line `#include <stdio.h>` to see what error messages this causes when compiling.
 
-<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/691949fa5bbb2b7926e65889761d723f2462f105/exercises/chapter_01/exercise_01/main_missing_include.c#L1-L7>
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/82f9da9980ea69cf390586dc3eb3ffd7b4657790/exercises/chapter_01/exercise_01/main_missing_include.c#L1-L7>
 
 ```powershell
 > gcc -std=c11 -Wall -Wextra -Wpedantic .\main_missing_include.c 
