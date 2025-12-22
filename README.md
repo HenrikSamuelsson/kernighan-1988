@@ -22,8 +22,8 @@ Most examples are intended to be built with a standard C toolchain.
 
 Example (GCC):
 
-- Build: `gcc -std=c11 -Wall -Wextra -Wpedantic main.c`
-- Run: `./a.exe`
+- Build: `gcc -std=c11 -Wall -Wextra -Wpedantic .\main.c`
+- Run: `.\a.exe`
 
 ## References
 
