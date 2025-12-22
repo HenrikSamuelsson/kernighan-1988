@@ -14,7 +14,7 @@ There is an example program in the book but I implemented my own version of the 
 
 ### Functional Version
 
-<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/46923bee0f96c26223326544df26b576ef843317/exercises/chapter_01/exercise_01/main.c#L1-L8>
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/0be7938042a046013b52ad8ceae09299ecaeaa19/exercises/chapter_01/exercise_01/main.c#L1-L9>
 
 This version compiles and runs as expected.
 
