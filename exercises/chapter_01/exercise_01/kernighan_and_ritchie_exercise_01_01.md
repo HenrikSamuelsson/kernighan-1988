@@ -60,6 +60,21 @@ Intentionally left out a semicolon to see what error messages this causes when c
       | ^
 ```
 
+### Fault Injection: Missing `main`
+
+Replaced `main` with `start` to see if this compiles.
+
+<https://github.com/HenrikSamuelsson/kernighan-and-ritchie-1988/blob/df63ef1d33defcbcd0ccd6fe06b932c7027d8097/exercises/chapter_01/exercise_01/main_missing_main.c#L1-L8>
+
+```powershell
+> gcc -std=c11 -Wall -Wextra -Wpedantic .\main_missing_main.c
+C:/tools/msys2/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:/tools/msys2/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/libmingw32.a(lib64_libmingw32_a-crtexewin.o): in function `main':
+D:/W/B/src/mingw-w64/mingw-w64-crt/crt/crtexewin.c:62:(.text.startup+0xb6): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+```
+
+Replacing `main` with another function name causes the program to compile successfully but fail during linking. This demonstrates that `main` is a required entry point defined by the C execution environment, not merely a naming convention within the source code.
+
 ## Answer
 
 The exercise demonstrates the basic structure of a minimal C program and how
