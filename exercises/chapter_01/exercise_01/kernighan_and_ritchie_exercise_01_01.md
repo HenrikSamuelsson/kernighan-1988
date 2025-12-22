@@ -12,7 +12,7 @@ compiler diagnostics.
 
 There is an example program in the book but I implemented my own version of the program, using a slightly more modern style than the example shown in the book.
 
-### Functional Version
+### Baseline Implementation
 
 This version compiles and runs as expected.
 
@@ -24,7 +24,7 @@ PS C:\dev\kernighan-and-ritchie-1988\exercises\chapter_01\exercise_01> ./a.exe
 Hello, world!
 ```
 
-### Missing Include
+### Fault Injection: Missing Include
 
 Intentionally left out the line `#include <stdio.h>` to see what error messages this causes when compiling.
 
@@ -46,7 +46,7 @@ Intentionally left out the line `#include <stdio.h>` to see what error messages 
 .\main_missing_include.c:5:5: note: include '<stdio.h>' or provide a declaration of 'printf'
 ```
 
-### Missing Semicolon
+### Fault Injection: Missing Semicolon
 
 Intentionally left out a semicolon to see what error messages this causes when compiling.
 
