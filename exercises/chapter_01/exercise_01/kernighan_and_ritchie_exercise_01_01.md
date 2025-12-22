@@ -62,6 +62,11 @@ Intentionally left out a semicolon to see what error messages this causes when c
 
 ## Answer
 
+The exercise demonstrates the basic structure of a minimal C program and how
+common syntax and declaration errors are reported by the compiler. It also
+serves as a practical introduction to compiling and running a C program from
+the command line using GCC on Windows.
+
 ## References
 
 Kernighan, B. W., & Ritchie, D. M. (1988). *The C programming language* (2nd ed.). Prentice Hall.
