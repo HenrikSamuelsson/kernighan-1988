@@ -19,8 +19,8 @@ The following program will test some different escape sequences including a test
 Experiment with some escape sequences showed that in a Windows 11 Command Prompt environment the following will occur:
 
 - `\a` causes an sound effect being played vie the OS audio stack
-- `\v` causes a line break
-- Undefined escape sequences such as `\z` are handled by just printing the escaped character
+- \v causes a vertical tab, which manifests as a normal line break, moving the cursor down to the start of the next line.
+- Undefined escape sequences such as `\z` Undefined result in a diagnostic warning and are interpreted as the escaped character being printed.
 
 ## References
 
