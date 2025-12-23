@@ -3,24 +3,13 @@
 
 int main(void)
 {
-    printf("\\a (alert) Produces an audible or visible alert without "
-           "changing the active position.\n");
-    printf("\a");
-    printf("\n");
-
-    printf("\\b (backspace)  Moves the active position to the previous "
-           "position on the current line. If the active position is at "
-           "the initial position of a line, the behavior of the "
-           "display device is unspecified.\n");
-    printf("123\b4\n");
-    printf("\n");
-
-    printf("\\z Isn't a defined escape sequence in the the C11 "
-           "standard lets see what happens.\n");
-    printf("\z");
-    printf("\n");
-
-    // TODO test \e
-
+    printf("1. Alert\n");
+    printf("<\a>\n");
+    printf("2. Vertical Tab\n");
+    printf("<\v>\n");
+    printf("3. Undefined Escape Sequence\n");
+    printf("<\z>\n");
+    printf("4. GCC Extension (\\e) Escape Sequence\n");
+    printf("<\e>\n");
     return EXIT_SUCCESS;
 }
