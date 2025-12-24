@@ -1,6 +1,6 @@
-# K&R Exercise 1.1
+# K&R Exercise 1-1
 
-Solution to Exercise 1.1 from Kernighan and Ritchie (1988).
+Solution to Exercise 1-1 from Kernighan and Ritchie (1988).
 
 ## Instruction
 
