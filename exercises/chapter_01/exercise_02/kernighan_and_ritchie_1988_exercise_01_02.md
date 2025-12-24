@@ -47,7 +47,7 @@ Running the program in a Powershell console on Windows causes the following outp
 Experiment with some `printf` escape sequences showed that in a Windows 11 Command Prompt environment the following will occur:
 
 - `\a` causes an sound effect being played vie the OS audio stack
-- \v causes a vertical tab, which in this environment manifests similarly to a line break, moving the cursor down to the start of the next line.
+- `\v` causes a vertical tab, which in this environment manifests similarly to a line break, moving the cursor down to the start of the next line.
 - Undefined escape sequences such as `\z` Undefined result in a diagnostic warning at compile time and are interpreted as the escaped character being printed at run time.
 - `\e` will consume the next following character preventing it from being printed
 
