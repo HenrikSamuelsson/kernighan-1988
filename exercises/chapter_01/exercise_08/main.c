@@ -28,7 +28,6 @@ int main(void)
         }
     }
 
-    printf("EOF seen: %d\n", next_character);
     printf("Number of blanks:   %4d\n", number_of_blanks);
     printf("Number of tabs:     %4d\n", number_of_tabs);
     printf("Number of newlines: %4d\n", number_of_newlines);
