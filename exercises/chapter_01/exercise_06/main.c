@@ -3,13 +3,15 @@
 
 int main(void)
 {
-    int res_expr;
+    int c;
+    int expr;
 
-    while ((res_expr = (getchar() != EOF)))
+    while ((c = getchar()) != EOF)
     {
-        printf("%d", res_expr);
+        expr = (c != EOF);
+        printf("c = %d  (c != EOF) = %d\n", c, expr);
     }
-    printf("%d", res_expr); /* prints the final 0 */
+    printf("c = %d  (c != EOF) = %d\n", c, (c != EOF));
 
     return EXIT_SUCCESS;
 }
